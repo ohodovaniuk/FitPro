@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/exercise_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/exercise_category_circle_avatar"/>
+
+    <TextView
+        android:id="@+id/exercise_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/exercise_avatar"
+        android:textSize="20sp"
+        android:textColor="@color/primary_white"/>
+
+    <TextView
+        android:id="@+id/number_of_workouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exercise_category_title"
+        android:layout_toEndOf="@id/exercise_avatar"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/primary_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/number_of_workouts"
+        android:background="@color/divider"/>
+
+</RelativeLayout>

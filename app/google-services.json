@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "884180045156",
+    "firebase_url": "https://fitprocurrent.firebaseio.com",
+    "project_id": "fitprocurrent",
+    "storage_bucket": "fitprocurrent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884180045156:android:8aa133071d4826c9",
+        "android_client_info": {
+          "package_name": "com.example.user.fitpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884180045156-l5hb9aqdldu2a09d1m0e5v1d77b7chg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.fitpro",
+            "certificate_hash": "de940cc763a023fb20b28270c32619cc9bf9df3a"
+          }
+        },
+        {
+          "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IULU724IwoBf94bQ7XSsPYFkvgOYENE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884180045156:android:9f731b30a3f6c525",
+        "android_client_info": {
+          "package_name": "dev.edmt.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884180045156-smauoqs1jm61d59pjfm2k1iscvbmfonu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.edmt.chatapp",
+            "certificate_hash": "de940cc763a023fb20b28270c32619cc9bf9df3a"
+          }
+        },
+        {
+          "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IULU724IwoBf94bQ7XSsPYFkvgOYENE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884180045156:android:aa9138ef0b368ddf",
+        "android_client_info": {
+          "package_name": "io.fitpro.fitpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884180045156-4r2foh0udd9tjlldnbhiob5dincp981j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.fitpro.fitpro",
+            "certificate_hash": "de940cc763a023fb20b28270c32619cc9bf9df3a"
+          }
+        },
+        {
+          "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IULU724IwoBf94bQ7XSsPYFkvgOYENE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884180045156-emc9j79a21b2l99lrsm4bc96apjgodgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

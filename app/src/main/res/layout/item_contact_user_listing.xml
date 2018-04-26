@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingTop="@dimen/padding_small"
+    >
+
+
+
+
+    <ImageButton
+        android:id="@+id/userProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="62dp"
+        android:maxHeight="55dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"
+        android:clickable="true"
+        android:layout_marginBottom="10px"
+        android:background="@null"
+        android:descendantFocusability="blocksDescendants"
+        android:src="@drawable/ic_placeholder_profile"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/userProfileImage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="20px"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#F1E504"
+        tools:text="Tom" />
+
+
+
+    <!--- Horizontal Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_toEndOf="@+id/text_view_user_alphabet"
+        android:layout_toRightOf="@+id/text_view_user_alphabet"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/darker_gray" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/ibDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/checkBox"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:background="@null"/>
+
+</RelativeLayout>

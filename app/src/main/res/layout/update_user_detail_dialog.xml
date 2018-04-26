@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="190dp"
+    android:background="@color/primary_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/addExerciseToWorkoutDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/edit_user_detail"
+        android:textSize="25sp"
+        android:textColor="@color/primary_white"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/primary_dark">
+
+        <EditText
+            android:id="@+id/userDetailTI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_detail"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/primary_dark">
+
+        <Button
+            android:id="@+id/cancelButtonDetail"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/cancel"
+            android:textColor="@color/primary_white"
+            android:background="@color/primary"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/nextButtonDetail"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/change"
+            android:textColor="@color/primary_white"
+            android:background="@color/primary"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

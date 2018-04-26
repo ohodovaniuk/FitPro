@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Base.AppTheme">
+    </style>
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_yellow</item>
+    </style>
+
+
+	
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+    <!--LOGIN REGISTRATION -->
+    <style name="AppTheme.EditProfile">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <!--
+
+        <item name="android:windowBackground">@color/primary_dark</item>
+        <item name="android:colorAccent">#0000FF</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_dark</item>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_yellow</item>
+    </style>-->
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.owner.fitpro">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- LOGIN & REGISTRATION -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- <activity android:name=".RegistrationLogin.activities.LoginActivity"> -->
+        <activity android:name=".RegistrationLogin.activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.Exercise.ExerciseCategory"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.Workout.WorkoutCategory"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.Workout.WorkoutTimeManager"
+            android:launchMode="singleTop"
+            android:parentActivityName=".WorkoutAndExercise.Workout.WorkoutCategory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WorkoutAndExercise.Workout.WorkoutCategory" />
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.Exercise.ExerciseDetails"
+            android:parentActivityName=".WorkoutAndExercise.Exercise.ExerciseCategory"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WorkoutAndExercise.Exercise.ExerciseCategory" />
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.DietPlan.DietPlan"
+            android:parentActivityName=".WorkoutAndExercise.Workout.WorkoutCategory"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WorkoutAndExercise.Workout.WorkoutCategory" />
+        </activity>
+        <activity
+            android:name=".WorkoutAndExercise.DietPlan.MealDetails"
+            android:parentActivityName=".WorkoutAndExercise.DietPlan.DietPlan"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WorkoutAndExercise.DietPlan.DietPlan" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+
+        <!-- LOGIN & REGISTRATION -->
+        <activity
+            android:name=".RegistrationLogin.activities.RegisterActivity"
+            android:parentActivityName=".RegistrationLogin.activities.LoginActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".RegistrationLogin.activities.ForgotPasswordActivity"
+            android:parentActivityName=".RegistrationLogin.activities.LoginActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".RegistrationLogin.activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrationLogin.activities.EditProfileActivity"
+            android:label="Edit Profile"
+            android:theme="@style/AppTheme.EditProfile" />
+
+        <!-- CHAT -->
+
+        <activity
+            android:name=".Chat.ui.activities.ChatActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Chat.Contacts.activities.ContactsActivity" />
+        <activity android:name=".Chat.Contacts.activities.NewContactActivity" />
+        <activity android:name=".RegistrationLogin.ProfileActivity_" />
+        <activity android:name=".Chat.Contacts.activities.ContactDetailsActivity"></activity>
+        <activity android:name=".Chat.ui.activities.ContactListActivity"></activity>
+
+    </application>
+
+</manifest>

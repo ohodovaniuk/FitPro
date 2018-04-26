@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:id="@+id/view_list_repo_action_container"
+		android:layout_width="wrap_content"
+		android:layout_height="60dp"
+		android:orientation="horizontal"
+		android:layout_gravity="end">
+
+		<TextView
+			android:id="@+id/swipe_new_meal"
+			android:layout_width="80dp"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			android:text="@string/add_new_meal"
+			android:textColor="@android:color/white"
+			android:background="@color/divider"
+			android:gravity="center"/>
+
+		<TextView
+			android:id="@+id/swipe_delete"
+			android:layout_width="80dp"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			android:text="@string/delete"
+			android:textColor="@color/primary_white"
+			android:background="@color/primary_red"
+			android:gravity="center"/>
+
+		<TextView
+			android:id="@+id/swipe_edit"
+			android:layout_width="80dp"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			android:text="@string/edit"
+			android:textColor="@android:color/white"
+			android:background="@color/divider"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/view_list_main_content"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:padding="@dimen/activity_vertical_margin"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:background="@color/primary">
+
+		<TextView
+			android:id="@+id/routine_header_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:textColor="@color/primary_white"/>
+
+		<ImageView android:id="@+id/routine_arrow"
+			android:layout_width="16dp"
+			android:layout_height="16dp"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/ic_workout_routine_header_arrow"/>
+
+	</LinearLayout>
+
+</FrameLayout>

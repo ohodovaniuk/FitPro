@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#00796B"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contact Details"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/chat_rounded_rect_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ImageView
+            android:id="@+id/ProfilePhoto"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tom"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="56dp"
+                android:text="Phone Number: "
+                android:textColor="@color/amber_300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="12dp"
+                android:text="Email:"
+                android:textColor="@color/amber_300"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="15dp"
+                android:text="Details:"
+                android:textColor="@color/amber_300"
+                android:textSize="18sp" />
+
+            <!--- Horizontal Line -->
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lastMsg"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/view2" />
+
+            <!--- Horizontal Line -->
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lastMsg"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/view" />
+
+            <!--- Horizontal Line -->
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lastMsg"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/view3" />
+
+            <Button
+                android:id="@+id/send_messege"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="77dp"
+                android:textColor="@color/primary_white"
+                android:background="@drawable/chat_rounded_rect_bg"
+                android:text="Send Message" />
+
+            <TextView
+                android:id="@+id/text_view_user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view2"
+                android:layout_alignStart="@+id/text_view_user_email"
+                android:text="Is a trainer at 24Fitness "
+                android:maxLength="30"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="8sp"
+                android:text="tom132@gmail.com"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2"
+                android:text="(647) 776-9986"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/pEditIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/view3"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:src="@drawable/ic_menu_manage"
+                android:background="@null"
+              />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reaple_chat"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingTop="@dimen/padding_small"
+
+    >
+
+
+
+
+    <ImageButton
+        android:id="@+id/userProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="62dp"
+        android:maxHeight="55dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"
+        android:clickable="true"
+        android:background="@null"
+        android:descendantFocusability="blocksDescendants"
+        android:src="@drawable/ic_placeholder_profile"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/userProfileImage"
+        android:layout_toRightOf="@+id/userProfileImage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#F1E504"
+        tools:text="Tom" />
+
+    <TextView
+        android:id="@+id/lastMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_username"
+        android:layout_alignStart="@+id/text_view_username"
+        android:layout_below="@+id/text_view_username"
+        android:text="Hey, r u still in the gym man?"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:maxLength="30"
+        android:paddingBottom="6dp"
+        android:visibility="visible" />
+
+
+    <!--- Horizontal Line -->
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lastMsg"
+        android:layout_toEndOf="@+id/text_view_user_alphabet"
+        android:layout_toRightOf="@+id/text_view_user_alphabet"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

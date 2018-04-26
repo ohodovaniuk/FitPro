@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="410dp"
+    android:background="@color/primary_green"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_exercise_to_workout_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/select_day"
+        android:textSize="25sp"
+        android:textColor="@color/primary_white"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/primary_green">
+
+        <RadioGroup
+            android:id="@+id/workout_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="@string/monday"
+                android:textSize="20sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/tuesday"
+                android:textSize="20sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/wednesday"
+                android:textSize="20sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/thursday"
+                android:textSize="20sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/friday"
+                android:textSize="22sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/saturday"
+                android:textSize="22sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunday"
+                android:textSize="22sp"
+                android:textColor="@color/primary_white"
+                android:gravity="end">
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/primary_green">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/cancel"
+            android:textColor="@color/primary_white"
+            android:background="@color/primary"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/next"
+            android:textColor="@color/primary_white"
+            android:background="@color/primary"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
